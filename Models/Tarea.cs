@@ -3,18 +3,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace efapp.Models;
 public class Tarea {
-    [Key]
+    // [Key]
     public Guid TareaId { get; set; }
-    [ForeignKey("CategoriaId")]
+    // [ForeignKey("CategoriaId")]
     public Guid CategoriaId { get; set; }
-    [Required]
-    [MaxLength(150)]
+    // [Required]
+    // [MaxLength(150)]
     public string Titulo { get; set; }
     public string Descripcion { get; set; }
     public Prioridad Prioridad { get; set; }
     public DateTime FechaCreacion { get; set; }
     public virtual Categoria Categoria { get; set; }
-    [NotMapped]
+    // [NotMapped]
     public string Resumen { get; set; }
 }
 
