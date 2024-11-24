@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("efapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+617fdb3496f5a690e0941b5c452ead4707f9f9e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("efapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("efapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,10 +14,13 @@ public class EFAppContext : DbContext {
     //     optionsBuilder.UseSqlite("Data Source=efapp.db");
     // }
 
-    // protected override void OnModelCreating(ModelBuilder modelBuilder) {
-    //     modelBuilder.Entity<Tarea>()
-    //         .HasOne(t => t.Categoria)
-    //         .WithMany(c => c.Tareas)
-    //         .HasForeignKey(t => t.CategoriaId);
-    // }
+    protected override void OnModelCreating(ModelBuilder modelBuilder) {
+        modelBuilder.Entity<Categoria>(c => {
+            c.ToTable("Categoria");
+            c.HasKey(c => c.CategoriaId);
+
+            c.Property( p => p.Nombre).HasMaxLength(150).IsRequired();
+            c.Property( p => p.Descripcion).HasMaxLength(200);
+        });
+    }
 }
